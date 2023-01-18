@@ -1,0 +1,24 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 1.5em;
+
+}
+
+#tweeter {
+  font-family: Bungee;
+}
+
+nav i.fa-angles-down {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navLink {
+  font-family: Source-Sans-Pro;
+  display: flex;
+  justify-content: flex-end;
+}
+
