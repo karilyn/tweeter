@@ -11,8 +11,13 @@ header > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }
 
-
-
+h2.name {
+  font-size:28px;
+  padding-bottom: 2em;
+  font-family: Source Sans Pro Light 300;
+  font-weight: lighter;
+}
 
