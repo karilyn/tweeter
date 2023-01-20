@@ -51,14 +51,18 @@
     </header>
 
      <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-      <h1>A Heading!</h1>
-        <h2>And a smaller heading</h2>
-          <p>
-            Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.
-            Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.
-            Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean.
-            Earthnut pea bologi leek soko chicory celtuce parsley jícama salsify.
-          </p>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form>
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
