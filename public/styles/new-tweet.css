@@ -1,0 +1,47 @@
+
+form > textarea {
+  padding-top: 1.5em;
+  margin-top: 1.5em;border: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 100%;
+  background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:600;
+
+}
+
+
+hr {
+  width: 100%;
+  justify-content: center;
+  background-color: #545149;
+  height: 2px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.tweet-button {
+  background-color: #4056a1;
+  color: #fff;
+  font-family: Bungee;
+  font-size: 100%;
+  position: static;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius:2px;
+  float: left;
+  margin-left: 1em;
+
+}
+
+footer output {
+  float: right;
+  font-family: Bungee;
+  margin-right: 1em;
+}
+
+
+
+
