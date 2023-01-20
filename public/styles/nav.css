@@ -1,24 +1,38 @@
 nav {
   height: 120px;
-  width: 100%;
+  width: 100%; /* full width */
   background-color: #4056A1;
   color: #FFFFFF;
-  padding: 1.5em;
-
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  display: flex;
+  justify-content: space-between
 }
 
-#tweeter {
+#title {
   font-family: Bungee;
+  padding: 0;
+  padding-left: 1.5em;
+  padding-bottom: 0.6em;
+  align-self:flex-end;
+}
+
+#title h1 {
+  display: inline;
 }
 
 nav i.fa-angles-down {
-  display: flex;
-  justify-content: flex-end;
+  color: #ef3d1e;
 }
 
-#navLink {
-  font-family: Source-Sans-Pro;
+div.nav-right {
   display: flex;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+  align-items: center;
   justify-content: flex-end;
+
 }
 
