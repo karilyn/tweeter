@@ -16,8 +16,8 @@ header > div {
 
 h2.name {
   font-size:28px;
-  padding-bottom: 2em;
-  font-family: Source Sans Pro Light 300;
-  font-weight: lighter;
+  padding-bottom: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
