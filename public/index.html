@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
 
     <!-- Icons and Buttons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.min.css" integrity="sha512-/2285SnGiTHjSKBkJzedsJ8wwSP0j74ZQyusMQ9j5Z1RtyKqZ3XtfS8hVp8OadLs2uq+8V6/n+CyqUNTO/UpYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -55,10 +55,10 @@
     <main class="container">
       <section class="new-tweet">
         <form action="/tweets/" method="POST">
-         <label for="tweet-text">What are you humming about?</label>
-         <textarea name="text" id="tweet-text"></textarea>
+         <textarea name="text" id="tweet-text" rows="1" cols="100%" placeholder="What are you humming about?"></textarea>
+         <hr>
          <footer>
-           <button type="submit" class="bttn-material-flat bttn-md">Tweet</button>
+           <button type="submit" class="tweet-button">Tweet</button>
            <output name="counter" class="counter" for="tweet-text">140</output>
          </footer>
        </form>
