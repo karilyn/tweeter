@@ -1,5 +1,5 @@
 
-form > textarea {
+form > textArea {
   padding-top: 1.5em;
   margin-top: 1.5em;border: 0;
   margin-left: 1em;
@@ -36,10 +36,15 @@ hr {
 
 }
 
-footer output {
+#counter {
   float: right;
   font-family: Bungee;
-  margin-right: 1em;
+
+}
+
+#counter.negative-counter {
+  color: rgb(207, 23, 23)
+
 }
 
 
