@@ -11,14 +11,15 @@ form > textArea {
 
 }
 
-
-hr {
+.h_line {
+  border-top: 2px solid #545149;
   width: 100%;
-  justify-content: center;
-  background-color: #545149;
-  height: 2px;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: auto 1em;
+}
+
+footer {
+  margin-top: 0.5em;
+  position: static;
 }
 
 .tweet-button {
@@ -33,12 +34,14 @@ hr {
   border-radius:2px;
   float: left;
   margin-left: 1em;
+  margin-top: .5em;
 
 }
 
 #counter {
   float: right;
   font-family: Bungee;
+
 
 }
 
