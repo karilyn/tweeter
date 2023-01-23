@@ -1,26 +1,29 @@
 
 form > textArea {
   padding-top: 1.5em;
-  margin-top: 1.5em;border: 0;
+  margin-top: 1.5em;
+  border: 0;
   margin-left: 1em;
   margin-right: 1em;
   width: 100%;
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight:600;
-
 }
 
 .h_line {
-  border-top: 2px solid #545149;
-  width: 100%;
+  border-top: 3px solid #545149;
   margin: auto 1em;
 }
 
-footer {
-  margin-top: 0.5em;
+.new-tweet footer {
+  margin-top: 0.4em;
   position: static;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
 }
+
 
 .tweet-button {
   background-color: #4056a1;
@@ -32,24 +35,95 @@ footer {
   text-transform: uppercase;
   border: none;
   border-radius:2px;
-  float: left;
-  margin-left: 1em;
-  margin-top: .5em;
 
 }
 
 #counter {
-  float: right;
   font-family: Bungee;
-
-
 }
 
 #counter.negative-counter {
-  color: rgb(207, 23, 23)
-
+  color: rgb(176, 14, 14)
 }
 
 
 
+article.tweet-container {
+  background-color: #f4f1ec;
+  border: 3px solid #545149;
+  margin: 1em;
+  transition: box-shadow .3s
+}
 
+article.tweet-container:hover {
+  box-shadow: 0 8px 11px  #657298;
+}
+
+
+ul.name-list {
+  background-color: #f4f1ec;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+
+li.name {
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  margin-left: .5em;
+}
+
+li.handle {
+  margin-right: .5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:600;
+  color:#adacab
+}
+
+.tweet p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:600;
+  color: #545149;
+  margin-right: 1em;
+  margin-left: 1em;
+
+}
+
+
+footer {
+  margin: 0.25em 1em;
+  margin-right: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section.ago small {
+  justify-self: flex-start;
+  font-size: 12px;
+}
+
+
+.fa-flag {
+  color:#423881d4;
+}
+.fa-flag:hover {
+  color: #b69b36d4;
+}
+
+.fa-retweet {
+  color:#423881d4;
+}
+.fa-retweet:hover {
+  color: #b69b36d4;
+}
+
+.fa-heart {
+  color:#423881d4;
+}
+
+.fa-heart:hover {
+  color: #b69b36d4;
+}
