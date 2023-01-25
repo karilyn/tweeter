@@ -29,10 +29,10 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
 
 
-const createTweetElement = function (tweetData) {
+const createTweetElement = function(tweetData) {
   let $tweet = $(`
     <article class="tweet-container">
       <header>
@@ -63,7 +63,7 @@ const createTweetElement = function (tweetData) {
   return $tweet;
 };
 
-const renderTweets = function (data) {
+const renderTweets = function(data) {
   // loops through tweets
   $('.tweet-container').remove();
   data.forEach((tweet) => {
@@ -74,7 +74,7 @@ const renderTweets = function (data) {
 };
 
 
-$(function(){
+$(function() {
   renderTweets(data);
 });
 
