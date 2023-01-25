@@ -50,7 +50,7 @@ const createTweetElement = function(tweetData) {
       </section>
       <footer>
         <section class="ago">
-          <small>${Math.floor((Number(new Date()) - tweetData.created_at) / 60 / 60 / 24)} days ago</small>
+          <small>${tweetData.created_at} </small>
         </section>
         <section class="icons">
         <i class="icons fa-solid fa-flag"></i>
@@ -78,3 +78,14 @@ $(function() {
   renderTweets(data);
 });
 
+
+$(function() {
+  const $form = $('#form');
+  $form.on("submit", (event) => {
+    event.preventDefault();
+    const $input = $('#tweet-text').serialize();
+    console.log($input);
+    const URL = "/tweets"
+    $.post(URL, $input);
+  });
+});
