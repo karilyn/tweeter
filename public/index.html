@@ -29,6 +29,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    
   </head>
 
   <body>
@@ -55,7 +56,7 @@
      <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form action="/tweets/" method="POST">
+        <form id="form">
          <textArea name="text" id="tweet-text" rows="1" cols="100%" placeholder="What are you humming about?"></textArea>
          <div class="h_line"></div>
          <footer>
