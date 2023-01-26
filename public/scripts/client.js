@@ -31,53 +31,57 @@
 //   }
 // ];
 
-$( document ).ready(function() {
 
-  const createTweetElement = function(tweetData) {
-    let $tweet = $(`
-      <article class="tweet-container">
-        <header>
-          <ul class="name-list">
-            <li class="name">
-              <img src=${tweetData.user.avatars}">
-              ${tweetData.user.name}
-            </li>
-            <li class="handle">${tweetData.user.handle}</li>
-          </ul>
-        </header>
-        <section class="tweet">
-          <p>${tweetData.content.text}</p>
-          <div class="h_line"></div>
+
+const createTweetElement = function(tweetData) {
+  let $tweet = $(`
+    <article class="tweet-container">
+      <header>
+        <ul class="name-list">
+          <li class="name">
+            <img src=${tweetData.user.avatars}">
+            ${tweetData.user.name}
+          </li>
+          <li class="handle">${tweetData.user.handle}</li>
+        </ul>
+      </header>
+      <section class="tweet">
+        <p>${tweetData.content.text}</p>
+        <div class="h_line"></div>
+      </section>
+      <footer>
+        <section class="ago">
+          <small>${timeago.format(tweetData.created_at)} </small>
         </section>
-        <footer>
-          <section class="ago">
-            <small>${tweetData.created_at} </small>
-          </section>
-          <section class="icons">
-          <i class="icons fa-solid fa-flag"></i>
-          <i class="icons fa-sharp fa-solid fa-retweet"></i>
-          <i class="icons fa-solid fa-heart"></i>
-          </section>
-        </footer>
-      </article>`
-    );
-    return $tweet;
-  };
+        <section class="icons">
+        <i class="icons fa-solid fa-flag"></i>
+        <i class="icons fa-sharp fa-solid fa-retweet"></i>
+        <i class="icons fa-solid fa-heart"></i>
+        </section>
+      </footer>
+    </article>`
+  );
+  return $tweet;
+};
 
-  const renderTweets = function(data) {
-    // loops through tweets
-    $('.tweet-container').remove();
-    data.forEach((tweet) => {
-      // calls createTweetElement for each tweet
-      const $tweet = createTweetElement(tweet);
-      $('.container').append($tweet);
-    });
-  };
+const renderTweets = function(data) {
+  // loops through tweets'
+  $('.tweet-container').remove();
+  data.forEach((tweet) => {
+    // calls createTweetElement for each tweet
+    const $tweet = createTweetElement(tweet);
+    $('.container').append($tweet);
+  });
+};
 
+const loadTweets = function() {
+  $.ajax(
+    '/tweets',
+    { method: 'GET' }
+  ).then(renderTweets);
+};
 
-  // renderTweets(data);
-
-
+$(() => {
   const $form = $('#form');
   $form.on("submit", (event) => {
     event.preventDefault();
@@ -87,21 +91,5 @@ $( document ).ready(function() {
     $.post(URL, $input);
   });
 
-
-  const loadTweets = function() {
-    $.ajax('/tweets', { method: 'GET' })
-    .then(renderTweets(data).serialize());
-  };
-
   loadTweets();
-
-
-
-
-
-
-
-
-
-
 });
