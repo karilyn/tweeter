@@ -35,7 +35,7 @@
 
 const createTweetElement = function(tweetData) {
   const escape = function(str) {
-    let p = document.createElement("p");
+    let p = document.createElement("p.tweet");
     p.appendChild(document.createTextNode(str));
     return p.innerHTML;
   };
@@ -93,9 +93,9 @@ $(() => {
     event.preventDefault();
     const $input = $('#tweet-text');
     if (!$input.val()) {
-      alert("Your tweet can't be blank");
+      $("#error-empty").text("Whoops! Your tweet can't be blank");
     } else if ($input.val().length > 140) {
-      alert("Your tweet must 140 characters or fewer");
+      $("#error-length").text("Whoops! Your tweet must 140 characters or fewer");
     } else {
       console.log($input);
       const URL = "/tweets"
