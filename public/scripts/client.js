@@ -34,6 +34,11 @@
 
 
 const createTweetElement = function(tweetData) {
+  const escape = function(str) {
+    let p = document.createElement("p");
+    p.appendChild(document.createTextNode(str));
+    return p.innerHTML;
+  };
   let $tweet = $(`
     <article class="tweet-container">
       <header>
@@ -46,7 +51,7 @@ const createTweetElement = function(tweetData) {
         </ul>
       </header>
       <section class="tweet">
-        <p>${tweetData.content.text}</p>
+        <p>${escape(tweetData.content.text)}</p>
         <div class="h_line"></div>
       </section>
       <footer>
