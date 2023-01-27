@@ -67,6 +67,7 @@ const createTweetElement = function(tweetData) {
 const renderTweets = function(data) {
   // loops through tweets'
   $('.tweet-container').remove();
+  data.reverse();
   data.forEach((tweet) => {
     // calls createTweetElement for each tweet
     const $tweet = createTweetElement(tweet);
@@ -85,11 +86,20 @@ $(() => {
   const $form = $('#form');
   $form.on("submit", (event) => {
     event.preventDefault();
-    const $input = $('#tweet-text').serialize();
-    console.log($input);
-    const URL = "/tweets"
-    $.post(URL, $input);
-  });
+    const $input = $('#tweet-text');
+    if (!$input.val()) {
+      alert("Your tweet can't be blank");
+    } else if ($input.val().length > 140) {
+      alert("Your tweet must 140 characters or fewer");
+    } else {
+      console.log($input);
+      const URL = "/tweets"
+      $.post(URL, $input.serialize(), (data) => {
+        $input.val('');
+        loadTweets();
+      });
+    }
 
+  });
   loadTweets();
 });
