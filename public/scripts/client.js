@@ -93,10 +93,12 @@ $(() => {
     event.preventDefault();
     const $input = $('#tweet-text');
     if (!$input.val()) {
-      $("#error-empty").text("Whoops! Your tweet can't be blank");
+      $("#error-empty").slideDown("slow").text("Whoops! Your tweet can't be blank").addClass("action");
     } else if ($input.val().length > 140) {
-      $("#error-length").text("Whoops! Your tweet must 140 characters or fewer");
+      $("#error-length").slideDown("slow").text("Whoops! Your tweet must 140 characters or fewer").addClass("action");
     } else {
+      $("#error-length").remove();
+      $("#error-empty").remove();
       console.log($input);
       const URL = "/tweets"
       $.post(URL, $input.serialize(), (data) => {
