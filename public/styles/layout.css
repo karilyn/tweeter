@@ -29,3 +29,47 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+#up-to-top {
+  position: fixed;
+  bottom: -40px;
+  right: 0.5em;
+  display: block;
+  font-size: 200%;
+  padding: 15px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #ef3d1e;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  transform: scale(0.3);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+#up-to-top.show {
+  bottom: 0.5em;
+  right: 0.5em;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+#up-to-top.show:hover {
+  bottom: 0.4em;
+  opacity: 1;
+}
+
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: rotate(-90deg) translateX(0px) scale(1);}
+  25%{opacity: 0; transform: rotate(-90deg) translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform: rotate(-90deg) translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: rotate(-90deg) translateX(0px) scale(1);}
+}
