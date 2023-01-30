@@ -21,17 +21,39 @@ nav {
   display: inline;
 }
 
-nav i.fa-angles-down {
-  color: #ef3d1e;
-}
-
-div.nav-right {
+.nav-right {
   display: flex;
   flex-direction: column;
+  background-color: #4056A1;
   font-family: Source Sans Pro;
   padding-right: 1.5em;
   padding-bottom: 0.6em;
   align-items: center;
   justify-content: flex-end;
 }
+
+button.compose {
+  border: none;
+  background-color: #4056A1;
+  font-family: Source Sans Pro;
+  color: #FFFFFF;
+}
+
+button.compose:hover {
+  border: none;
+  background-color: #4056A1;
+  font-family: Source Sans Pro;
+  color: #FFFFFF;
+}
+
+.fa-angles-down {
+  color: #ef3d1e;
+}
+
+.fa-angles-down:hover {
+  color: #ef3d1e;
+}
+
+
+
 
