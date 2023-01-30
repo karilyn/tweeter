@@ -40,19 +40,14 @@ button.compose {
 }
 
 button.compose:hover {
-  border: none;
-  background-color: #4056A1;
-  font-family: Source Sans Pro;
-  color: #FFFFFF;
+  box-shadow: 0 8px 11px  #162655;
 }
 
 .fa-angles-down {
   color: #ef3d1e;
 }
 
-.fa-angles-down:hover {
-  color: #ef3d1e;
-}
+
 
 
 
