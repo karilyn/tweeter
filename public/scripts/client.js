@@ -89,7 +89,7 @@ const loadTweets = function() {
 
 $(() => {
   const $form = $('#form');
-  $form.on("submit", (event) => {
+  $form.submit((event) => {
     event.preventDefault();
     const $input = $('#tweet-text');
     if (!$input.val()) {
@@ -108,5 +108,21 @@ $(() => {
     }
 
   });
+
   loadTweets();
-});
+
+  $('.nav-right').mouseover(() => {
+    $('#write-new-tweet-i').addClass('fa-bounce');
+  });
+
+  $('.nav-right').mouseout(() => {
+    $('#write-new-tweet-i').removeClass('fa-bounce');
+  });
+
+  const $button = $('button.compose');
+  $button.click((event) => {
+    event.preventDefault();
+    $form.slideToggle();
+
+  })
+})
