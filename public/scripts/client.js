@@ -119,10 +119,32 @@ $(() => {
     $('#write-new-tweet-i').removeClass('fa-bounce');
   });
 
-  const $button = $('button.compose');
-  $button.click((event) => {
+  $('button.compose').click((event) => {
     event.preventDefault();
     $form.slideToggle();
+  });
 
-  })
+  const btn = $('#up-to-top');
+  $(window).scroll(() => {
+    // if page is scrolled down more than 300px, display button, otherwise hide
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, main').animate({
+        scrollTop: 0
+      },
+      '300',
+      () => {
+        $form.slideDown();
+        $('#tweet-text').focus();
+      }
+    );
+  });
+
 })
