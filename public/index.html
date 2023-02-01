@@ -45,57 +45,58 @@
         <i id="write-new-tweet-i" class="fa-solid fa-angles-down"></i>
       </section>
     </nav>
-    <header class="user">
-      <div>
-        <img src="/images/profile-hex.png">
-      </div>
-      <br>
-      <div>
-        <h2 class="name"><strong>Karilyn</strong> Kempton</h2>
-      </div>
-    </header>
+    <section class="large-screen">
+      <header class="user">
+        <div>
+          <img src="/images/profile-hex.png">
+        </div>
+        <br>
+        <div>
+          <h2 class="name"><strong>Karilyn</strong> Kempton</h2>
+        </div>
+      </header>
 
-     <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form id="form">
-          <p id="error-length"></p>
-          <p id="error-empty"></p>
-         <textArea name="text" id="tweet-text" rows="1" cols="100%" placeholder="What are you humming about?"></textArea>
-         <div class="h_line"></div>
-         <footer>
-           <button type="submit" class="tweet-button">Tweet</button>
-           <output id="counter" for="tweet-text">140</output>
-         </footer>
-       </form>
-      </section>
-      <article class="tweet-container">
-        <header>
-          <ul class="name-list">
-            <li class="name">
-              <img src="">
-
-            </li>
-            <li class="handle"></li>
-          </ul>
-        </header>
-        <section class="tweet">
-          <p class="tweet"></p>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <form id="form">
+            <p id="error-length"></p>
+            <p id="error-empty"></p>
+          <textArea name="text" id="tweet-text" rows="1" cols="100%" placeholder="What are you humming about?"></textArea>
           <div class="h_line"></div>
+          <footer>
+            <button type="submit" class="tweet-button">Tweet</button>
+            <output id="counter" for="tweet-text">140</output>
+          </footer>
+        </form>
         </section>
-        <footer>
-          <section class="ago">
-            <small></small>
+        <article class="tweet-container">
+          <header>
+            <ul class="name-list">
+              <li class="name">
+                <img src="">
+              </li>
+              <li class="handle"></li>
+            </ul>
+          </header>
+          <section class="tweet">
+            <p class="tweet"></p>
+            <div class="h_line"></div>
           </section>
-          <section class="icons">
-          <i class="icons fa-solid fa-flag"></i>
-          <i class="icons fa-sharp fa-solid fa-retweet"></i>
-          <i class="icons fa-solid fa-heart"></i>
-          </section>
-        </footer>
-      </article>
-      <button id="up-to-top" class="fa-solid fa-angles-up"></button>
-    </main>
+          <footer>
+            <section class="ago">
+              <small></small>
+            </section>
+            <section class="icons">
+            <i class="icons fa-solid fa-flag"></i>
+            <i class="icons fa-sharp fa-solid fa-retweet"></i>
+            <i class="icons fa-solid fa-heart"></i>
+            </section>
+          </footer>
+        </article>
+        <button id="up-to-top" class="fa-solid fa-angles-up"></button>
+      </main>
+    </section>
   </body>
 </html>
 
