@@ -1,12 +1,13 @@
 #form {
   display: none;
+  margin-top: 1em;
 }
 
 form > textArea {
-  padding-top: 1.5em;
+  padding-top: .5em;
   border: 0;
-  margin-left: 1em;
-  margin-right: 1em;
+  /* margin-left: .5em; */
+  margin-right: .5em;
   width: 90%;
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
@@ -15,20 +16,20 @@ form > textArea {
 
 .h_line {
   border-top: 3px solid #545149;
-  margin: 1em
 }
 
 section.tweet > div.h_line {
   border-top: 3px solid #545149;
   padding: 0;
-  margin: 0;
+  margin: 0em;
 
 }
 
 .new-tweet footer {
   margin-top: 0.4em;
-  position: static;
   margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 0em;
   display: flex;
   justify-content: space-between;
 }
@@ -60,7 +61,7 @@ section.tweet > div.h_line {
 article.tweet-container {
   background-color: #f4f1ec;
   border: 3px solid #545149;
-  margin: .5em;
+  margin-top: 1em;
   transition: box-shadow .3s
 }
 
