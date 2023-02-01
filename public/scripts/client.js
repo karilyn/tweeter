@@ -67,7 +67,7 @@ $(() => {
       // remove the errors when they're resolved
       $('#error-length').slideUp();
       $('#error-empty').slideUp();
-      console.log($input);
+
       const URL = '/tweets'
       $.post(URL, $input.serialize(), (data) => {
         $input.val('');
@@ -78,14 +78,13 @@ $(() => {
 
   loadTweets();
 
-  $('.nav-right').mouseover(() => {
-    // add a bounce when the arrows are hovered over
-    $('#write-new-tweet-i').addClass('fa-bounce');
+
+  $('.nav-right').hover(() => {
+      $('#write-new-tweet-i').addClass('fa-bounce');
+    }, () => {
+      $('#write-new-tweet-i').removeClass('fa-bounce');
   });
 
-  $('.nav-right').mouseout(() => {
-    $('#write-new-tweet-i').removeClass('fa-bounce');
-  });
 
   $('button.compose').click((event) => {
     event.preventDefault();
