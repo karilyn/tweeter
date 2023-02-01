@@ -4,7 +4,7 @@ nav {
   height: 120px;
   width: 100%; /* full width */
   color: #FFFFFF;
-  position: relative;
+  position: fixed;
   top: 0; /* Position the navbar at the top of the page */
   display: flex;
   justify-content: space-between;
@@ -41,10 +41,6 @@ button.compose {
   font-family: Source Sans Pro;
   color: #FFFFFF;
 }
-
-/* button.compose:hover {
-  box-shadow: 0 8px 11px  #162655;
-} */
 
 .fa-angles-down {
   color: #ef3d1e;
