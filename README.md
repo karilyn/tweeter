@@ -19,7 +19,7 @@ Tweeter is a simple, single-page AJAX-based Twitter clone that uses jQuery, HTML
 
 ## Screenshots
 
-!["Screenshot of tweet compose box"]
-!["Screenshot of main page on desktop"]
-!["Screenshot of add new tweet on mobile"]
-!["Screenshot of add new tweet on desktop"]
+!["Screenshot of tweet compose box"](https://raw.githubusercontent.com/karilyn/tweeter/57064b6a8100f6cba6e89d1d96398d958936d34f/docs/tweet-box.png)
+!["Screenshot of main page on desktop"](https://raw.githubusercontent.com/karilyn/tweeter/57064b6a8100f6cba6e89d1d96398d958936d34f/docs/home-screen-desktop.png)
+!["Screenshot of add new tweet on mobile"](https://raw.githubusercontent.com/karilyn/tweeter/57064b6a8100f6cba6e89d1d96398d958936d34f/docs/add-new-tweet-mobile.png)
+!["Screenshot of add new tweet on desktop"](https://github.com/karilyn/tweeter/blob/master/docs/add-new-tweet-desktop.png?raw=true)
