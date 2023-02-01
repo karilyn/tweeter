@@ -1,9 +1,10 @@
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Large devices */
+@media only screen and (min-width: 1024px) {
   nav {
     background-color: #4056A1;
     background-image: none;
     position: fixed;
+    max-width: 1400px;
   }
 
   .nav-right {
@@ -40,16 +41,12 @@
     margin-top: 0;
     margin-bottom: 1em;
   }
-}
 
 
-@media only screen and (min-width: 1024px) {
   body {
     max-width: 1400px;
     margin: 0 auto;
   }
 
-  nav {
-    max-width: 1400px;
-  }
+
 }
