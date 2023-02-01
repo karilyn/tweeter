@@ -1,12 +1,13 @@
 nav {
+  background-color: #d79720;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   height: 120px;
   width: 100%; /* full width */
-  background-color: #4056A1;
   color: #FFFFFF;
-  position: fixed; /* Set the navbar to fixed position */
+  position: relative;
   top: 0; /* Position the navbar at the top of the page */
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 #title {
@@ -24,7 +25,8 @@ nav {
 .nav-right {
   display: flex;
   flex-direction: column;
-  background-color: #4056A1;
+  background-color: #d79720;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   font-family: Source Sans Pro;
   padding-right: 1.5em;
   padding-bottom: 0.6em;
@@ -34,14 +36,15 @@ nav {
 
 button.compose {
   border: none;
-  background-color: #4056A1;
+  background-color: #d79720;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   font-family: Source Sans Pro;
   color: #FFFFFF;
 }
 
-button.compose:hover {
+/* button.compose:hover {
   box-shadow: 0 8px 11px  #162655;
-}
+} */
 
 .fa-angles-down {
   color: #ef3d1e;
