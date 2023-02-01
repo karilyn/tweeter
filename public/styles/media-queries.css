@@ -38,8 +38,11 @@
 
 @media only screen and (min-width: 1024px) {
   body {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+  }
 
+  nav {
+    max-width: 1400px;
   }
 }
