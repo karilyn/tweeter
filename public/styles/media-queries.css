@@ -3,6 +3,7 @@
   nav {
     background-color: #4056A1;
     background-image: none;
+    position: fixed;
   }
 
   .nav-right {
