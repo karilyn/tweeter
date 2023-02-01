@@ -16,12 +16,29 @@
     background-image: none;
   }
 
+  section.large-screen {
+    display: flex;
+    flex-direction: row;
+    padding-top: 160px;
+  }
 
+  header.user {
+    width: 33.3%;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 2em;
+    max-height: 400px;
+  }
+
+  main.container {
+    width: 66.7%;
+    margin-top: 2em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   body {
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
 
   }
