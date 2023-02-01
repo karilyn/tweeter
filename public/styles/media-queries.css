@@ -1,0 +1,27 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: #4056A1;
+    background-image: none;
+  }
+
+  .nav-right {
+    background-color: #4056A1;
+    background-image: none;
+  }
+
+  button.compose {
+   background-color: #4056A1;
+    background-image: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+
+  }
+}
