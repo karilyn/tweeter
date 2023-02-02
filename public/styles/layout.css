@@ -6,13 +6,10 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
@@ -29,9 +26,6 @@ main {
   width: 90%;
   margin: auto;
 }
-/*
- defined below or in other CSS files, as per instructions
- */
 
 #up-to-top {
   position: fixed;

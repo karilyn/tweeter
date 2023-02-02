@@ -17,6 +17,7 @@
     background-image: none;
   }
 
+/* Add the header and tweets into two columns */
   section.large-screen {
     display: flex;
     flex-direction: row;

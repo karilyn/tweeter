@@ -1,3 +1,4 @@
+/* New tweets */
 #form {
   display: none;
   margin-top: 1em;
@@ -6,7 +7,6 @@
 form > textArea {
   padding-top: .5em;
   border: 0;
-  /* margin-left: .5em; */
   margin-right: .5em;
   width: 90%;
   background-color: #f4f1ec;
@@ -16,13 +16,6 @@ form > textArea {
 
 .h_line {
   border-top: 3px solid #545149;
-}
-
-section.tweet > div.h_line {
-  border-top: 3px solid #545149;
-  padding: 0;
-  margin: 0em;
-
 }
 
 .new-tweet footer {
@@ -56,8 +49,30 @@ section.tweet > div.h_line {
   color: rgb(176, 14, 14)
 }
 
+#error-empty {
+  display: none;
+}
+
+#error-empty.action {
+  border: 3px solid rgb(176, 14, 14);
+  color:rgb(176, 14, 14);
+  margin: 1.0em;
+  padding: 1.0em;
+}
+
+#error-length {
+  display: none;
+}
+
+#error-length.action {
+  border: 3px solid rgb(176, 14, 14);
+  color:rgb(176, 14, 14);
+  margin: 1.0em;
+  padding: 1.0em;
+}
 
 
+/* Old Tweets */
 article.tweet-container {
   background-color: #f4f1ec;
   border: 3px solid #545149;
@@ -101,28 +116,6 @@ section.tweet {
   margin-left: 1em;
 }
 
-#error-empty {
-  display: none;
-}
-
-#error-empty.action {
-  border: 3px solid rgb(176, 14, 14);
-  color:rgb(176, 14, 14);
-  margin: 1.0em;
-  padding: 1.0em;
-}
-
-#error-length {
-  display: none;
-}
-
-#error-length.action {
-  border: 3px solid rgb(176, 14, 14);
-  color:rgb(176, 14, 14);
-  margin: 1.0em;
-  padding: 1.0em;
-}
-
 footer {
   margin: 0.25em 1em;
   margin-right: 1em;
@@ -135,10 +128,10 @@ footer section.ago small {
   font-size: 12px;
 }
 
-
 .fa-flag {
   color:#423881d4;
 }
+
 .fa-flag:hover {
   color: #b69b36d4;
 }
@@ -146,6 +139,7 @@ footer section.ago small {
 .fa-retweet {
   color:#423881d4;
 }
+
 .fa-retweet:hover {
   color: #b69b36d4;
 }
