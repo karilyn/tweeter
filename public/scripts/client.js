@@ -78,14 +78,14 @@ $(() => {
 
   loadTweets();
 
-
+  // animate the arrows if either the 'Write a New Tweet' or 'fa-angles-down' are hovered over
   $('.nav-right').hover(() => {
       $('#write-new-tweet-i').addClass('fa-bounce');
     }, () => {
       $('#write-new-tweet-i').removeClass('fa-bounce');
   });
 
-
+  // slide the new tweet form down when the compose button or fa-angles-down are clicked
   $('button.compose').parent().click((event) => {
     event.preventDefault();
     $form.slideToggle();
@@ -101,8 +101,8 @@ $(() => {
     }
   });
 
-  btn.on('click', function (e) {
-    e.preventDefault();
+  btn.on('click', function (event) {
+    event.preventDefault();
     // scroll back up to the top when arrow up button is clicked
     $('html, main').animate({
       scrollTop: 0
