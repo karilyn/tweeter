@@ -86,7 +86,7 @@ $(() => {
   });
 
 
-  $('button.compose').click((event) => {
+  $('button.compose').parent().click((event) => {
     event.preventDefault();
     $form.slideToggle();
   });
